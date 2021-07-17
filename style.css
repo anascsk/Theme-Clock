@@ -99,11 +99,27 @@ needle.second {
 
 .center-point::after {
     content: '';
-    background-color: #var (var(--primary-color));
-    width: 10px;
-    height: 10px;
+    background-color:  (var(--primary-color));
+    width: 5px;
+    height: 5px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+  }
+
+  .time {
+      font-size: 60px;
+      
+  }
+
+  .date {
+      color: #aaa;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+  }
+
+  .date .circle {
+      
   }
