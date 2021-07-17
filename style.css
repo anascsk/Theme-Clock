@@ -131,5 +131,6 @@ needle.second {
     justify-content: center;
     line-height: 18px;
     transition: all 0.5s ease-in;
+    font-size: 12px;
     
     }
