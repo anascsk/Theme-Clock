@@ -1,9 +1,9 @@
-const hourEl = document.querySelector(.hour)
-const minuteEl = document.querySelector(.minute)
-const secondEl = document.querySelector(.second)
-const timeEl = document.querySelector(.time)
-const dateEl = document.querySelector(.date)
-const toggleEl = document.querySelector(.toggle)
+const hourEl = document.querySelector('.hour')
+const minuteEl = document.querySelector('.minute')
+const secondEl = document.querySelector('.second')
+const timeEl = document.querySelector('.time')
+const dateEl = document.querySelector('.date')
+const toggleEl = document.querySelector('.toggle')
 
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -20,3 +20,17 @@ toggle.addEventListener('click', (e) => {
         e.target.innerHtml = 'Light Mode'
     }
 })
+
+
+function setTime() {
+    const time = new Date();
+    const month = time.getMonth()
+    const day = time.getDay()
+    const hours = time.getHours()
+    const hoursForClock = hours % 12
+    const minutes = time.getMinutes()
+    const seconds = time.getSeconds()
+
+}
+
+setTime()
